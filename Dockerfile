@@ -11,8 +11,8 @@ COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install --upgrade pip
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /MusicPlayer
-WORKDIR /MusicPlayer
+RUN mkdir /MusicPlayerr
+WORKDIR /MusicPlayerr
 #OPY startup.sh /startup.sh
 
 # Running Music Player Bot
