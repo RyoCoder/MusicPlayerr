@@ -13,7 +13,7 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -U -r requirements.txt
 RUN mkdir /MusicPlayer
 WORKDIR /MusicPlayer
-COPY startup.sh /startup.sh
+#OPY startup.sh /startup.sh
 
 # Running Music Player Bot
-CMD ["/bin/bash", "/startup.sh"]
+CMD python3 main.py
