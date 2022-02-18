@@ -36,9 +36,9 @@ class Config:
             print("ERROR: SESSION, API_ID and API_HASH is required!")
             quit(0)
         self.SPOTIFY: bool = False
-        self.QUALITY: str = os.environ.get("QUALITY", "high").lower()
-        self.PREFIXES: list = os.environ.get("PREFIX", "!").split()
-        self.LANGUAGE: str = os.environ.get("LANGUAGE", "en").lower()
+        self.QUALITY: str = os.environ.get("QUALITY", "medium").lower()
+        self.PREFIXES: list = os.environ.get("PREFIX", "/").split()
+        self.LANGUAGE: str = os.environ.get("LANGUAGE", "vi").lower()
         self.STREAM_MODE: str = (
             "audio"
             if (os.environ.get("STREAM_MODE", "audio").lower() == "audio")
